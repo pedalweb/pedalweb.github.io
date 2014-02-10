@@ -1,0 +1,154 @@
+body {
+	margin: 0;
+	padding:0;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header {
+	height: 100%;
+	width: 300px;
+	position:fixed;
+	float: left;
+	left: 0%;
+	display: block;
+	top: 0px;
+	z-index: 5;
+	background-color: white;
+	
+}
+
+#badge {
+	position:relative;
+	width: 290px;
+	z-index: 1;
+	display: block;
+	padding-bottom: 1%;
+	top: 2px;
+	margin: 0 auto;
+}
+
+/* Info about sessions */
+.map_container .session_info h2 {
+	margin: 0px 0px 0px 0px;
+	font-size: 38px;
+	font-weight: bold;
+}
+
+.map_container .session_info h3 {
+	margin: 0px 0px 12px 0px;
+	font-size: 24px;
+	text-transform: italic;
+	letter-spacing: 4px;
+	color: black;
+}
+
+.prompt {
+	float:left;
+	position: fixed;
+	width:300px;
+	height:76%;
+	left: 1%;
+	z-index: 1;
+	top: 100px;
+	display: block;
+	overflow: auto;
+	z-index: 1;
+}
+
+.session_info {
+	height:100%;
+}
+
+.session_detail_container { display: none ; }
+}
+
+/*Map and Sessions*/
+.map_container {
+	height: 100%;
+	left: 300px;
+	width: 1000px;
+	position: absolute;
+	top:10px;
+}
+
+.map {
+	overflow:scroll;
+	width: 1500px;
+	position: absolute;
+	z-index: 3;
+	left: 300px;
+}
+
+.playerbody ul {
+	list-style: none;
+}
+
+/*blips on map*/
+.map_container a.dot {
+	background: url(dots.png);
+	height: 50px;
+	width: 50px;
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	z-index: 4;
+	
+}
+
+.map_container a.dot:hover {
+	background-position: 0px -50px;	
+}
+
+.map_container a.dot.selected {
+	background-position: 0px -100px;
+}
+
+/*Footer with Social Media*/
+
+.social {
+	width: 100%;
+	height: 75px;
+	bottom: 0px;
+	position: absolute;
+	display: block;
+	z-index: 5;
+}
+
+.Facebook {
+	width: 48px;
+	height: 75px;
+	background: url('facebook.png') no-repeat;
+	display:block;
+	float: left;
+	z-index: 6;
+	text-indent: -9999px;
+}	
+.Facebook:hover{background-position:0 -75px;}
+
+.Tumblr {
+	width: 54px;
+	height: 75px;	
+	background: url('tumblr.png') no-repeat;
+	display:block;
+	position: relative;
+	float:right;
+	z-index: 6;
+	text-indent: -9999px;
+}	
+
+.Tumblr:hover {background-position:0 -75px;}
+
+.Soundcloud {
+	width: 154px;
+	height: 75px;
+	background: url('soundcloud.png') no-repeat;
+	display:block;
+	margin-left: 78px;
+	z-index: 6;
+	text-indent: -9999px;
+	position: relative;
+}
+.Soundcloud:hover{background-position:0 -75px;}
+

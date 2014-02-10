@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title> Echolocale </title>
+	<link rel="stylesheet" type="text/css" href="includes/style.css" />
+	<script type="text/javascript" src="includes/jquery-1.5.min.js"></script>
+	<script type="text/javascript" src="includes/map.js"></script>	
+		
+	<!-- pop up player shit-->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="lib/jquery-1.10.1.min.js"></script>
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="source/jquery.fancybox.js"></script>
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	<!--Media helper. Group items, disable animations, hide arrows, enable media and button helpers.-->
+	<script type="text/javascript">			
+		$(document).ready(function() {
+
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+		});
+	</script>
+	<style type="text/css">
+		.playerbody {
+			max-width: 700px;
+			margin: 0 auto;
+		}
+	</style>		
+</head>
+
+<body>
+<!-- Top Logo+Header -->
+	<header>
+		<a id="badge" href="//echolocale.com"> <img id="badge" src="echobadge.png" alt="echolocale"/> </a>
+		<br/>	
+<!--Filler pre selection-->
+		<div class="prompt">
+			<div class="session_detail">
+			<h3> Explore the bay </h3>
+			<p> Echolocate yourself. </p>
+			</div>
+		</div>
+<!--Info for each session-->
+	<div class="session_detail_container">
+
+	<!--Mwahaha-->	
+		<div class="session_detail" id="morninoldsport">
+			<div class="session_info">
+				<h2> Mornin' Old Sport </h2>
+				<h3> Owl and Company Books </h3>
+				<p class="paragraph1"> Oakland’s Owl and Co. books believes in the power of enduring appeal. Poke your head in thelittle nest on Piedmont Ave., and don’t expect to find the usual trappings of a modern bookstore – no generic bestsellers, gift cards, heaven forbid any mention of eBooks. Everything at Owl & Co. is a unique artifact, from staunch revolutionary theory to vivid and fantastical Americana. Here's a thought: It’s the type of place your kids might never see. Unless they fall under the abiding spell of Mornin Old Sport.
+				</p>
+				<p class="paragraph2"> Scott and Kate’s folk obsession doesn’t claim an era or an ethos, but it’s effortlessly timeless nonetheless. Drawing up images of back porches, Fitzgeraldian ease, jazz clubs, and rural romance, Mornin Old Sport hitches its sound to the heart of American classic music and takes it leaping into the present moment. At Owl & Co., they performed one song from their self-titled debut, two new songs, and we even caught them soundchecking a cover of the Patti Page/Elvis Presley standard “I Don’t Care If The Sun Don’t Shine.”
+				</p>
+			</div>
+			<div class="clear_both"></div>
+		</div>				
+	<!--Mwahaha-->	
+		<div class="session_detail" id="mwahaha">
+			<div class="session_info">
+				<h2> Mwahaha </h2>
+				<h3> MCloyne Court Hotel </h3>
+				<p class="paragraph1"> An evil laugh; cruel humor. Think about that dichotomy for a second. There's definitely a whiff of it lacing their songs, but look at the members of Mwahaha on stage or in rehearsal and you'll say damn, they're serious. This is the final installment looking back on our festival at Cloyne Courtlast year, where we took the band down to the dungeon for a sober examination of the best tracks from their self-titled debut. "Sleep Deep" takes hold like Beelzebub's handshake, a lulling but epiphanal snapshot like flashing lights in a dream. Look out for Mwahaha's album on March 26th, and hear more from their self-titled debut over at Plug Research.
+				</p>
+			</div>
+			<div class="clear_both"></div>
+		</div>						
+	<!--SmallSur-->	
+		<div class="session_detail" id="smallsur">
+			<div class="session_info">
+				<h2> Small Sur </h2>
+				<h3> Mollusk Surf Shop </h3>
+				<p class="paragraph1"> Out where the sun goes down, far west of where we abide, San Francisco feels like a differnt city. You roll down your windows and sand blows in as you trace the seaside highway past Ocean Beach, the Chalet, and Sutro Baths. The waves are rugged. Around 46th Avenue there's a store calledMollusk Surf Shop, and we never would have known about it if Heidi from The Sandwitches hadn't called us out there to see Small Sur.
+				</p>
+				<br/>
+				<p class="paragraph2">Bob Keal is a Baltimore school teacher, a homeowner, and a staid enthusiast for East Coast DIY folk. After a brief introduction, we spent a while puttering around Mollusk, which is a gem of a shop. We sat in the back amid stacked surfboards, and even stuck Bob in a retro surf mobile, a fantasy one-man beach RV. If you like the music here, you can listen to his most recent album Tones, check up on Facebook, and expect new material out this year.
+				</p>
+			</div>
+			<div class="clear_both"></div>
+		</div>
+	<!--KishiBashi-->	
+		<div class="session_detail" id="kishibashi">
+			<div class="session_info">
+				<h2> Kishi Bashi </h2>
+				<h3> Golden Gate Casting Club </h3>
+				<p class="paragraph1"> Kaoru Ishibashi recorded his new album 151a in one fell swoop. He's got a philosophy about spontaneity that he carries with him everywhere, along with a little suitcase and a few pedals. Whether it's his solo live show, his previous projects like Jupiter One, or his role in backing everyone from Regina Spektor to Of Montreal, K is always accepting the natural flow of events. Rarely will he pick the second take over the first, in favor of a product that's completely original, infused with an energy all its own.
+				</p>
+				<br/>
+ 				<p class="paragraph2"> Fly fishing, by contrast, seems like the total opposite -- it's a sport that's almost entirely about doing the same thing over and over. The silver-haired anglers at the Golden Gate Park casting pools first laid eyes on Kishi Bashi the way you'd look at a trout without scales. Sitting on an outcropping over the symmetrical pools, K did two improvised tunes without stopping, then we packed up and took off. Can't help but wonder what those fishermen thought, for a sleepy day of technique-building to give way to such a flash in the pan. By the end of the show, though, K had a handful of new fans, who had unwittingly stumbled upon his first ever concert on the water.
+				</p>
+			</div>
+			<div class="clear_both"></div>
+		</div>
+	<!--safe-->	
+		<div class="session_detail" id="safe">
+			<div class="session_info">
+				<h2> SAFE </h2>
+				<h3> Cloyne Court Hotel </h3>
+				<p class="paragraph1"> For Pt. II of our dispatches from CLOchella series, we nabbed Chris and Jesse, two of our favorite Oakland ex-pats, to share some new songs from their upcoming debut as SAFE. What you have here is a glimpse at two cuts at their most pure and embryonic. SAFE sat in the front garden at Cloyne Court, puffed and sipped, and delivered two baby-blue versions of "Eye To Arrow" and "Palisades." Their debut is out this February onGreedhead (also look for a 7" and EP reissue in the meantime), and SAFE's SF tour stop with Das Racist is October 12 at DNA Lounge.
+				</p>
+			</div>
+			<div class="clear_both"></div>
+		</div>		
+	<!--sharkycoast-->	
+		<div class="session_detail" id="sharkycoast">
+			<div class="session_info">
+				<h2> Sharky Coast </h2>
+				<h3> The Cloyne Court Hotel </h3>
+				<p class="paragraph1"> It's easy to lob dinky band clichés at Sharky Coast: a hiked up guitar, a girl drummer, a bowl cut. But this young duo from Santa Rosa is anything but tiresome or cutesy. Christine is a fearsome beatkeeper, and Nick is a sharp-tounged vocalist and torrential guitar picker, slithering through the murkiest and coolest waters this side of the Pacific. After they won over the coop crowd at CLOchella we met up with them in the murky dungeons bellow the Cloyne Court Hotel. Enjoy the medley, and check out the band on Facebook.
+				</p>
+			</div>
+			<div class="clear_both"></div>
+		</div>				
+	<!--mainattrackionz-->	
+		<div class="session_detail" id="mainattrackionz">
+			<div class="session_info">
+				<h2> Main Attrakionz feat. Shady Blaze </h2>
+				<h3> Chapparral Gallery </h3>
+				<p class="paragraph1"> Green Ova is a headspace, a purple empire in the mind created by the constant grind of some of the shiniest new lights in Oakland rap. For Mondre and Squadda, it started in middle school, when Squadda scrawled "Main Attrakionz" onto a piece of scratch paper, and a duo was born. For Shady Blaze, the triple time-traveler who's nearly five years their senior, Green Ova is the culmination of a career based on razor-sharp skills, constant improvement, and wizened experience.
+				</p>
+				<br/>
+				<p class="paragraph2">For one long weekend in February, though, Greenovaland was a real place. It was Downtown Oakland's Chapparral Gallery, transformed by the art of production wunderkinds Ontask Family. The opening night was one of the most spontaneous and joyful functions of its kind in Old Oakland, presented by the faithful cultural custodians at Flavourhood (click the link for photos rom the party that night) and the enduring effort of the ever-trusty Dream Collabo. The Green Ova crew laid down a knockout version of Ryan Hemsworth's "8Ball" remix (from the new Executive Series Chandelier Redux) and then took off for tour. They just wrapped up their East Coast dates and are landing in Austin, TX this week to turn it all green.
+				</p>
+			</div>
+			<div class="clear_both"></div>
+		</div>						
+	<!--exrays-->	
+		<div class="session_detail" id="exrays">
+			<div class="session_info">
+				<h2> Exray's </h2>
+				<h3> Cedric Wentworth's Gallery </h3>
+				<p class="paragraph1"> There was this surreal night last summer, when the guys of SF group Exray's invited us out to Bayview. They set up in the middle of a big warehouse studio, owned by local artist Cedric Wentworth. The bizarre, beautiful, industral, and at times apocalyptic pieces crowded the well-used working space, but at nighttime it was a bit icy for a band -- and that was before we turned off the lights. Nonetheless it was the perfect venue for a brand new single, the tale of a few lonely robots at the end of the world, about as yelling-into-the-void as it gets.
+				</p>
+				<br/>
+				<p class="paragraph2">After months of vexation by lost and found footage, and after a fair bit of quiet for Exray's, too, this video finally came together into what might be one of our weirdest and most exciting ventures yet. This fall, the song received a proper studio treatment, as well, and is set to drop, in preparation for a whole new LP. Enjoy, and look for "You Can Trust A Robot" at your friendly neighborhood sound dispensary.
+				</p>
+			</div>
+			<div class="clear_both"></div>
+		</div>						
+	<!--elephantandcastles-->	
+		<div class="session_detail" id="elephantandcastles">
+			<div class="session_info">
+				<h2> Elephant and Castles </h2>
+				<h3> A friendly fryers cabin </h3>
+				<p class="paragraph1"> We call it Tahoe. It’s a hideaway smack dab in the middle of Oakland, a cozy little lodge tucked away at the end of a long driveway, sheltered by an office building. We met there on one of the few rainy evenings of this winter, just a couple days before Dave packed his things to move to L.A. to take up with the good folks at Plug Research. We knew they’d take good care of him, but as everyone gathered around the front porch – members of James & Evander, Yalls, Ander, Parentz, Kites Sail High, and others I’m probably forgetting – it was a bit sad to know that Oakland was about to lose such a talent.
+				</p>
+				<br/>
+				<p class="paragraph2">What followed was a spectacle, aided by analog visual projections from Dylan Travis (aka Some Ember) and expert twiddling by Adam Myatt and Glenn Jackson (that’s James & Evander). “I Will,” performed live here, is a standout track from Dave’s new album Transitions, which Plug releases March 27. And, to our selfish surprise, we didn’t have to make our own painful transition after all; Thanks to an enterprising colony of bedbugs, Dave took his talents back to Oakland, at least for now.
+				</p>
+			</div>
+			<div class="clear_both"></div>
+		</div>							
+	<!--waters-->	
+		<div class="session_detail" id="waters">
+			<div class="session_info">
+				<h2> Waters </h2>
+				<h3> Alamo Square Park </h3>
+				<p class="paragraph1"> To be sure, the dudes of Waters are goofs, but the band’s personnel and the support group they’ve formed around songwriter Van Pierszalowski is made of seriously thick bonds. While everybody screwed around in front of the painted ladies at Alamo Square, Van kept falling into little reveries, favoring the opening melody of the Magnetic Fields' “Come Back From San Francisco.” As a California native and longtime Bay Area resident, the song is emblematic of Van’s push/pull relationship with the place – the urge to go on to other things despite the City’s undeniably seductive powers.
+				</p>
+				<br/>
+				<p class="paragraph2">In the video, you might recognize their acting bassist from a sunny Berkeley afternoon last year (that’s Caleb from Grand Lake, and now Churches), or their mild-mannered drummer Nicholas, who moonlights as Santa Rosa, CA-based Goodriddler. The studly Viking on e-guitar is Niko, the sole Norwegian holdout from the original album recordings, and Van’s rock. They perform both the loudest and quietest tracks from Waters' new album Out In The Light below:
+				</p>
+			</div>
+			<div class="clear_both"></div>
+		</div>				
+	<!--waters-->	
+		<div class="session_detail" id="dominantlegs">
+			<div class="session_info">
+				<h2> Dominant Legs </h2>
+				<h3> A Mom's Roof </h3>
+				<p class="paragraph1"> In San Francisco, September and October always bring the best weather of the year. You get a giddy feeling walking up and down the hills in sweat-inducing temperatures, passing the thousands of other brimming Bay Area residents eager to experience the city in this rare state. Hot weather transforms SF into a picturesque Summerland. The parks are always full. There's always a line around the block for ice cream.
+				</p>
+				<br/>
+				<p class="paragraph2">It was one of these sweet, balmy afternoons that we caught up with Dominant Legs to hear some songs from their new album. We hiked up Grove Street, loaded up with watermelon and wheat beer, to the family home of keyboardist Hannah Hunt. It was a stately wooden structure, with stairs on stairs on stairs (as we climbed we couldn't help but think of Jen & Ephriam's old house nearby). We hopped out the window of her mom's bedroom and onto a sunny roofdeck looking out over downtown. Ryan Lynch, the band's driving force, has this insane focus -- whether it's music or sports, he's always analyzing, critiquing, improving upon ideas.
+				</p>
+				<br/>
+				<p class="paragraph2"> Both songs are from Dominant Legs' brand new album, Invitation. These acoustic versions duck the frenetic energy of their upbeat studio versions, and provide a precious glimpse inside the belly of each song. Invitation is out today, Sept. 27, on Lefse Records [iTunes link].
+				</p>
+			</div>
+			<div class="clear_both"></div>
+		</div>				
+	<!--shannon and the clams-->	
+		<div class="session_detail" id="shannonandtheclams">	
+			<div class="session_info">
+				<h2> Shannon and the Clams </h2>
+				<h3> Cakeland </h3>
+				<p class="paragraph1"> Out where the sun goes down, far west of where we abide, San Francisco feels like a differnt city. You roll down your windows and sand blows in as you trace the seaside highway past Ocean Beach, the Chalet, and Sutro Baths. The waves are rugged. Around 46th Avenue there's a store calledMollusk Surf Shop, and we never would have known about it if Heidi from The Sandwitches hadn't called us out there to see Small Sur.
+				</p>
+				<br/>
+				<p class="paragraph2">Folks don’t typically get inside, though – the artist behind Cakeland, Scott Hove, got some press at the gallery’s inception a couple years back, but mostly he keeps it closed now. For surrounding residents, his magnum opus is an enimga, a curiosity.
+				</p>
+				<p class="paragraph2"> Shannon & The Clams, whose members live practically around the corner, fit perfectly into Scott's culinary fantasy world. Even their outfits matched the soft pastel interior. Their music is like his cake: staggering, seductive, but not without fangs. They tiptoed between the dazzling, wall-mounted behemoths, dragging amps and drums through the narrow corridors, trying to avoid getting scraped by acrylic decorations and real taxidermic teeth. They set up wherever they could, clams Cody and Ian crammed in opposite corners, Shannon standing alone with her Dano in the Cake vault. What ensued was lip-smacking; a few of the more sugary cuts from their new album, Sleep Talk. "Done With You" is above.Follow up with us soon for more from this session.
+				</p>
+				<br/>
+			</div>
+			<div class="clear_both"></div>
+		</div>					
+	<!--spaceghost-->	
+		<div class="session_detail" id="spaceghost">		
+			<div class="session_info">
+				<h2> Space Ghost </h2>
+				<h3> The parking lot behind Cloyne </h3>
+				<p class="paragraph1"> All Sudi craves is samples. He spends all year waiting for summer, splicing clips and splitting hairs in film school until he can pursue his off-duty obsession. Making beats. Provide him a station and a few minutes of solitude and he’s happy, electricity his only sustenance. So we gave him as much space as possible: snaked a cable into a discreet parking structure, cleared the place out and let him feast. And now that it’s finally sunny, he’s inside and back at it, always throwing up new sounds here. Also keep track of him on facebook and twitter.	
+				</p>
+			</div>
+			<div class="clear_both"></div>
+		</div>				
+	<!--little scream-->	
+		<div class="session_detail" id="littlescream">
+			<div class="session_info">
+				<h2> Little Scream </h2>
+				<h3> A bus stop </h3>
+				<p class="paragraph1"> The bus stop. The ultimate urban respite. We spin our wheels so fast these days, it’s hard not to feel burnt out at times, and the bus stop is one of the few places that can bring it all to a screeching halt. Just two tentative minutes at this arbitrary landmark could end up being the most uncluttered part of your day.
+				</p>
+				<br/>
+				<p class="paragraph2">We only hope Laurel felt the same, coming off the heels of SXSW and into a whirlwind trek of a Western tour, on which she’d already lost her voice, a soundcheck, and even a pair of shoes. She certainly hadn’t lost her edge, though. We caught her as she flew through San Francisco in March, and she threw us a beautiful, more wistful version of “Cannons,” with Ari Swan on violin. Watch and compare with the vastly different album version.
+				</p>
+				<p class="paragraph2">Little Scream just wrapped up rounds with Sharon Van Etten, and will be back to check-up again this summer with new tourmates The Antlers. Her debut album, The Golden Record, includes contributions from both Arcade Fire’s Richard Reed Parry and The National’s Aaron Dessner, among others. It's out on vinyl today (Apr. 12) on Secretly Canadian.
+				</p>
+				<br/>
+			</div>
+			<div class="clear_both"></div>
+		</div>				
+	<!--the sandwitches-->	
+		<div class="session_detail" id="thesandwitches">
+			<div class="session_info">
+				<h2> The Sandwitches </h2>
+				<h3> The ladies' room </h3>
+				<p class="paragraph1"> The Sandwitches will make a mess just to clean it up. They will set off smoke alarms and replace the batteries. They will shake you awake to sing you to sleep. And they have as much grace as grit. Over the past couple of years, this San Francisco three-piece has coined a sound that’s both melodically captivating and decidedly dissonant. Alongside Roxanne Brodeur on drums, Heidi Alexander and Grace Cooper each wield only a guitar and a commanding set of vocal cords. But despite sparse instrumentation, every song on Mrs. Jones’ Cookies inhabits an environment entirely of its own. The full-length follow-up to 2009’s How To Make Ambient Sad Cake (potentially best album title ever), the new LP is a resounding achievement, exploring ‘60s folk, attacking here and there with backwoods, country gusto, and even harking back to the droney lullabies on their bewitching (Sandwitching?) Duck Duck Goose EP.
+				</p>
+				<br/>
+				<p class="paragraph2">We met up with the band before a show last week, and had this swanky, vintaged green room all to ourselves. But this band's always a tad unpredictable, so I suppose it shouldn't have come as a surprise when they proposed the bathrooms. And to think, all of those times you wondered why they all go in there together. Now you know. Special thanks to the Shattuck Down Low for letting us use their ladies’ room.				
+				</p>
+			</div>
+			<div class="clear_both"></div>
+		</div>					
+	<!--the john brothers-->	
+		<div class="session_detail" id="thejohnbrothers">
+			<div class="session_info">
+				<h2> The John Brothers </h2>
+				<h3> Ghost Town </h3>
+				<p class="paragraph1"> John Morgan broods affectionately, if that makes any sense. When we visited his little nest in Oakland's Ghost Town in May, most of the time he just sat back in fiery silence, coolly bellowing an occasional witticism or bit of explosive laughter to keep things glowing. But this composure sometimes gives way to conflagration, exposing a much more wild, passionate nature. And wouldn't you guess, his piano playing is suitably reflective. His songs can crackle with warmth and contemplation, but also teeter on the brink of dissonance, threatening to stray into more unsettling territory.
+				</p>
+				<br/>
+				<p class="paragraph2">John Thatcher Boomer and John Morgan aren't brothers, in fact they're pretty different. But that doesn't stop them from bickering like sibs. In their native environment every remark is a tongue-in-cheek jab, approaching subjects of attitude, vision, and technical prowess to delicately cut the other down to size. But they beam with commitment. It's the bond, even if artifically wrought, of two brothers who realize they're better off together, despite their differences. In an effort to present these two sides of the same coin, we start with the work of John Thatcher Boomer. John Morgan's piece will come later this week.
+				</p>
+				<p class="paragraph2">Thatcher, as his friends call him, can't help himself at the piano. His touch ranges from subtle and responsive to big and burly. He'll occasionally get lost in a run or a roll and wake up in a far away octave. His playing is both fiery and formal. Mostly self-taught, like the other John, Thatcher makes up half of their performing duo, who have made their appearances on SF's Market Street and other Bay Area public transit terminals their sole occupation.
+				</p>
+			</div>
+			<div class="clear_both"></div>
+		</div>				
+	<!--you are plural-->	
+		<div class="session_detail" id="youareplural">
+			<div class="session_info">
+				<h2> You Are Plural </h2>
+				<h3> A friendly roof-nest </h3>
+				<p class="paragraph1"> Dense fog descended as we scaled Fell Street. We parked the Explorer on the hill and kept climbing, up into an august old apartment building, inhabited in part by Ephriam Nagler and Jen Grady. The San Francisco climate was a harsh contradiction to the sunny East Bay, where we were just ten minutes before. We were hit hard with the reality of a sun-starved city. 				</p>
+				<br/>
+				<p class="paragraph2">But as we ascended, stair after stair, through their home and further upward, our anticipation increased. Like an Alpine expedition, the air seemed to get thinner, the situation more surreal. Then we surfaced, to find more of a nest than a summit: a closed-in roof deck, a cozy outpost peering out across the city to the South and West. Beyond the double doors and window panes, there were no railings, no safety precautions, only a few feet and a sheer cliff.
+				</p>
+				<p class="paragraph2">If you listen closely at the beginning of “Caught On A Wire,” you can hear the million-mile-an-hour wind bellow and whip around our little sky-scraping chalet. We were nothing but nervous precipitation at the mercy of the elements. This little room couldn't have been more apt for You Are Plural, the ultimate complement to the newly-minted duo's soft, perilous elegance.
+				</p>
+			</div>
+			<div class="clear_both"></div>
+		</div>				
+	<!--incan abraham-->	
+		<div class="session_detail" id="incanabraham">
+			<div class="session_info">
+				<h2> Incan Abraham </h2>
+				<h3> Bender's Bar </h3>
+				<p class="paragraph1"> Free music. Folks almost expect it these days. And after only a couple years, we already take direct-line services like bandcamp for granted. I mention this because Incan Abraham was one of the first groups that I got to know solely through their bandcamp page. They released their first EP in 2009 (as Red Tide), and since then they've put out two more killer short-form albums. And they're all free.
+				</p>
+				<br/>
+				<p class="paragraph2">They're just a few of many who are willing to run the indie-rock good faith circuit. They toted their gear to CMJ in 2010, made the schlep from SoCal in February for San Francisco's Noise Pop Festival, and took on a few spur-of-the-moment appearances at South by Southwest last week. And though I doubt they generate much cash, their musical magnanimity is sterling. We caught up with them in SF at the Mission's own Bender's Bar during Noise Pop, where we were gifted two acoustic gems.		
+				</p>
+				<p class="paragraph2">It was the kind of morning where you wake up on a friend's floor, the kind of afternoon where everyone's generous with Bloody Marys. So it seemed apt to start low-key, with the guys huddled into a booth. Then we took it outdoors. You could hardly even call these the same songs as the original recordings, but they're equally as dynamic and heartfelt. Whether the band's augmenting the ambiance of a dimly lit bar on a breezy afternoon, or enhancing the hum of the back patio, Incan Abe just keeps on giving.					
+				</p>
+			</div>
+			<div class="clear_both"></div>
+		</div>				
+	<!--mini mansions-->	
+		<div class="session_detail" id="minimansions">
+			<div class="session_info">
+				<h2> Mini Mansions </h2>
+				<h3> A friend's living room </h3>
+				<p class="paragraph1"> This spring I heard a striking tune by a band called Mini Mansions. It was mostly a zany lyrical collage, an almost comic stream of consciousness and muttered wordplay, but with just enough gravitas to take utterly seriously. Then over the summer, driving through the San Fernando Valley in a friend's car, the song came on again. Hearing them in their native Los Angeles, I was sold on Mini Mansions. I think this makes sense, as songs are so often a product and a projection of the places they were born. No matter how old or far from home they get, they can never completely shake all of the hometown soil from their roots.				
+				</p>
+				<br/>
+				<p class="paragraph2">So when they came to the Bay in October, we flipped it around, and took them to our own stomping grounds. We set them up at a friend's old Victorian duplex in South Berkeley, to do "Majik Marker" on a real live piano. The house's residents were barely awake when we barged in, and most of them didn't even know what was going on. The piano blasted the hell out of the room, threatening to drown out their unamplified vocals and taxing our microphones. But it was certainly worth it; the vibrations that come out of a big wood-framed, steel-filled box of hammers are just unbeatable compared to any electronic signal, and we ended up with our very own version of "Majik Marker."				
+				</p>
+			</div>
+			<div class="clear_both"></div>
+		</div>				
+	<!--grandlake-->	
+		<div class="session_detail" id="grandlake">
+			<div class="session_info">
+				<h2> Grand Lake </h2>
+				<h3> Indian Rock (Berkeley) </h3>
+				<p class="paragraph1"> Caleb Nichols has got that dogged attitude unique to those seasoned individuals who have devoted so much of their life to music. At some point I imagine these types of people have a realization: there’s no turning back to a lifestyle of water coolers and W-9 forms. And that kind of dedication, or maybe entrapment, is riveting. This steadfastness givesGrand Lake’s music a backbone that keeps it chugging along into a future that can only be bright. And part of Nichols’ charm is that he always seems game to try anything. That's why we asked him to take his music up to Indian Rock Park, a high-altitutde outpost nestled in the Berkeley hills.
+				</p>
+				<br/>
+				<p class="paragraph2"> Nichols cut his teeth as an original member of the semi-nomadic, semi-Oaklandic indie band Port O’Brien. He left the group and started Grand Lake, featuring the musical talents of core members John Pomeroy, Jameson Swanagon, and Danae Swanagon. Grand Lake released the critically-acclaimed debut Blood Sea Dream earlier this year, and by that point the water motif was starting to seem pretty significant. So as we stood there, looking down at the San Francisco Bay, the whole thing pulled together in a neat panorama, the scene struck me as entirely appropriate.				
+				</p>
+				<br />
+				<p class="paragraph3">That afternoon, Nichols was accompanied only by Jameson Swanagon (who is also an entrancing solo artist), in a musical formation they refer to as “Soft Lake.” We hopped up the rock together, braving the spiral stairs hewn deep into the rock, guitar cases and equipment in hand, as folks stopped to scrutinize our presence. In the end, this first shoot was a team effort, surviving through botched takes and the occasional, overpowering gust of ocean wind. But it was Nichol’s enduring wit and positivity that drew in a motley handful of hikers to contribute to their rendition of Pavement’s “In The Mouth Of A Desert.”				
+				</p>
+			</div>
+			<div class="clear_both"></div>
+		</div>				
+		</div>
+
+<!--Footer-->
+		<div class="social">
+				<div class="Facebook" href="https://twitter.com/ECHOLOCALE"> Facebook </div>
+				<div class="Tumblr" href="http://echolocale.tumblr.com/"> Tumblr </div>
+				<div class="Soundcloud" href="http://www.youtube.com/channel/UCdGVJ8jML7nnUgfhKykFnWw"> Soundcloud </div>
+		</div>
+	</header>
+	
+<!-- Map & stuff-->
+	<div class="map_container">
+		<img class="map" src="map.png" />
+<!-- dots -->
+		
+		<div class="playerbody">
+			<ul>
+				<li> <a class="dot fancybox-media" style="top:50%; left:50%;" session="morninoldsport" href="http://www.youtube.com/watch?v=rlWn5L9s-xM"></a> </li>
+				<li> <a class="dot fancybox-media" style="top:30%; left:70%;" session="mwahaha" href="http://www.youtube.com/watch?v=FoIwP1uyUkE"></a> </li>
+				<li> <a class="dot fancybox-media" style="top:60%; left:30%;" session="smallsur" href="http://www.youtube.com/watch?v=S7cbXPVbxdE"></a> </li>
+				<li> <a class="dot fancybox-media" style="top:50%; left:30%;" session="kishibashi" href="http://www.youtube.com/watch?v=X0k03ObR5q8"></a> </li>
+				<li> <a class="dot fancybox-media" style="top:30%; left:68%;" session="safe" href="http://www.youtube.com/watch?v=eQniUytRhKE"></a> </li>
+				<li> <a class="dot fancybox-media" style="top:30%; left:66%;" session="sharkycoast" href="http://www.youtube.com/watch?v=e3AL_Iaxr60"></a> </li>
+				<li> <a class="dot fancybox-media" style="top:60%; left:30%;" session="mainattrakionz" href="http://www.youtube.com/watch?v=GcsZOncOqJE"></a> </li>
+				<li> <a class="dot fancybox-media" style="top:30%; left:30%;" session="exrays" href="http://www.youtube.com/watch?v=opj24KnzrWo"></a> </li>
+				<li> <a class="dot fancybox-media" style="top:30%; left:55%;" session="elephantandcastles" href="http://www.youtube.com/watch?v=IMq7lmRYHuM"></a> </li>
+				<li> <a class="dot fancybox-media" style="top:50%; left:55%;" session="waters" href="http://www.youtube.com/watch?v=HUgYxJQa7Xk"></a> </li>
+				<li> <a class="dot fancybox-media" style="top:30%; left:35%;" session="dominantlegs" href="http://www.youtube.com/watch?v=WTqjxxw8qqk"></a> </li>
+				<li> <a class="dot fancybox-media" style="top:30%; left:60%;" session="shannonandtheclams" href="http://www.youtube.com/watch?v=SN2wygv0O10"></a> </li>
+				<li> <a class="dot fancybox-media" style="top:30%; left:70%;" session="spaceghost" href="http://www.youtube.com/watch?v=QbxInG_L7-A"></a> </li>
+				<li> <a class="dot fancybox-media" style="top:30%; left:40%;" session="littlescream" href="http://www.youtube.com/watch?v=C9-0nRD6-SM"></a> </li>
+				<li> <a class="dot fancybox-media" style="top:30%; left:60%;" session="thesandwitches" href="http://www.youtube.com/watch?v=DcH073ukOWo"></a> </li>
+				<li> <a class="dot fancybox-media" style="top:30%; left:55%;" session="thejohnbrothers" href="http://www.youtube.com/watch?v=SJERN35OGYQ"></a> </li>
+				<li> <a class="dot fancybox-media" style="top:30%; left:30%;" session="youareplural" href="http://www.youtube.com/watch?v=ZFopwzbQKKI"></a> </li>
+				<li> <a class="dot fancybox-media" style="top:30%; left:40%;" session="incanabraham" href="http://www.youtube.com/watch?v=Z2mj74flrQA"></a> </li>
+				<li> <a class="dot fancybox-media" style="top:30%; left:60%;" session="minimansions" href="http://www.youtube.com/watch?v=fUYYwCXVTUg"></a> </li>
+				<li> <a class="dot fancybox-media" style="top:30%; left:30%;" session="grandlake" href="http://www.youtube.com/watch?v=Pqw9jTbeXtc"></a> </li>			
+			</ul>	
+		</div>		
+	</div>
+</body>	
+</html>
+
