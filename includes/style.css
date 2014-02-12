@@ -21,7 +21,7 @@ header {
 
 #badge {
 	position:relative;
-	width: 290px;
+	width: 100%;
 	z-index: 1;
 	display: block;
 	padding-bottom: 1%;
