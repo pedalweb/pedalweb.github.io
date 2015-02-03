@@ -1,32 +1,48 @@
 body {
-	margin: 0;
+	margin: 10px 0 0 0;
 	padding:0;
 	height: 100%;
 	width: 100%;
 	margin: 0 auto;
+    font-family: 'Josefin Slab', serif;
 }
 
 header {
-	height: 100%;
-	width: 300px;
-	position:fixed;
-	float: left;
-	left: 0%;
-	display: block;
-	top: 0px;
-	z-index: 5;
-	background-color: white;
-	
+    width: 500px;
+    height: 440px;
+    margin: 10px auto 0 auto;
+    position: static;
 }
 
-#badge {
-	position:relative;
-	width: 100%;
-	z-index: 1;
+.headerlogo {
+    width: 300px;
+    margin: 0 auto 0 auto;
+    display: block;
+}
+
+
+.map {
+    width: 960px;    
+    height: 490px;
+    background-image: url(map.png);
+    background-size: contain;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.branddef {
+    text-align: center;
+    text-size: 24px;
+    text-family: sans-serif;
+}
+
+.browsertext {
+	height: auto;
+	width: 500px;
+    margin: 0 auto;
 	display: block;
-	padding-bottom: 1%;
-	top: 2px;
-	margin: 0 auto;
+    text-align: center;
 }
 
 /* Info about sessions */
@@ -45,16 +61,13 @@ header {
 }
 
 .prompt {
-	float:left;
-	position: fixed;
 	width:300px;
 	height:76%;
-	left: 1%;
 	z-index: 1;
-	top: 100px;
 	display: block;
 	overflow: auto;
 	z-index: 1;
+    margin: 0 auto;
 }
 
 .session_info {
@@ -65,69 +78,111 @@ header {
 }
 
 /*Map and Sessions*/
-.map_container {
-	height: 100%;
-	left: 300px;
-	width: 1000px;
-	position: absolute;
-	top:10px;
-}
-
 .map {
-	overflow:scroll;
-	width: 1500px;
-	position: absolute;
-	z-index: 3;
-	left: 300px;
+    position: relative;
+    display: block;
+    width: 960px;
+    height: 500px;
+    background-color: blue;
 }
 
 .playerbody ul {
 	list-style: none;
+    width: 100%;
+    height: 100%;
 }
-
+.map ul{
+    list-style-type: none;
+}
 /*blips on map*/
-.map_container a.dot {
+.mapcontainer a.dot {
 	background: url(dots.png);
-	height: 50px;
-	width: 50px;
-	display: block;
+    background-size: cover;
+	height: 40px;
+	width: 40px;
 	cursor: pointer;
 	position: absolute;
 	z-index: 4;
-	
 }
 
-.map_container a.dot:hover {
-	background-position: 0px -50px;	
+.mapcontainer a.dot:hover {
+	background-position: 0px -40px;	
+    position: absolute;
 }
 
-.map_container a.dot.selected {
-	background-position: 0px -100px;
+.mapcontainer a.dot.selected {
+	background-position: 0px -80px;
 }
+
+
+
+section {
+    margin: 0 0 0 0;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.sessionintro {
+    text-align: center;
+    font-size: 18px
+}
+
+.fancybox-media {
+    
+}
+
+.dotcontainer {
+    position: relative;
+    width: 960px;
+    height: 6094px; 
+}
+
+
 
 /*Footer with Social Media*/
 
 .social {
-	width: 100%;
-	height: 75px;
-	bottom: 0px;
-	position: absolute;
-	display: block;
-	z-index: 5;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 330px;
+    margin: 40px auto 40px auto;
 }
 
-.Facebook {
+.social li {
+    float: left;
+}
+
+.social a {
+    display: block;
+    width: 100px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.social a:hover{
+    color:red;
+}
+
+.facebook {
 	width: 48px;
-	height: 75px;
+	height: 60px;
 	background: url('facebook.png') no-repeat;
+    background-size:co;
 	display:block;
 	float: left;
 	z-index: 6;
 	text-indent: -9999px;
 }	
-.Facebook:hover{background-position:0 -75px;}
+.facebook:hover{background-position:0 -75px;}
 
-.Tumblr {
+.tumblr {
 	width: 54px;
 	height: 75px;	
 	background: url('tumblr.png') no-repeat;
@@ -138,9 +193,9 @@ header {
 	text-indent: -9999px;
 }	
 
-.Tumblr:hover {background-position:0 -75px;}
+.tumblr:hover {background-position:0 -75px;}
 
-.Soundcloud {
+.soundcloud {
 	width: 154px;
 	height: 75px;
 	background: url('soundcloud.png') no-repeat;
@@ -150,5 +205,5 @@ header {
 	text-indent: -9999px;
 	position: relative;
 }
-.Soundcloud:hover{background-position:0 -75px;}
+.soundcloud:hover{background-position:0 -75px;}
 
